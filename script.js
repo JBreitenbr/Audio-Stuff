@@ -15,7 +15,7 @@ document.documentElement.addEventListener('mousedown', () => {
 
   const chunks = [];
 
-  const notes = 'CDEFGAB'.split('').map(n => `${n}4`);
+  const notes = 'CDEFGABCBAGFEDC'.split('').map(n => `${n}4`);
   let note = 0;
   Tone.Transport.scheduleRepeat(time => {
     if (note === 0) recorder.start();
